@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanya Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+    <style>
+        /* css reset */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url(img/bg.jpg);
+            color: white;
+            font-family: 'Lobster', cursive;
+
+            background-repeat: no-repeat;
+            background-size: 100%;
+
+        }
+
+        .left {
+            /* border: 2px solid #fc9802; */
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 25px;
+        }
+
+        .left img {
+            width: 135px;
+            filter: invert(100%);
+            margin: -16px auto
+        }
+
+        .text {
+            position: absolute;
+            bottom: -5px;
+            font-size: 18px;
+            padding: 0px;
+
+        }
+
+        .mid {
+            /* border: 2px solid rgb(9, 137, 223); */
+            display: block;
+            width: 45%;
+            margin: 17px auto;
+
+
+        }
+
+        .right {
+            /* border:  2px solid lawngreen; */
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 25px;
+
+        }
+
+        .right:hover {
+            background-color: rgb(49, 61, 4)
+        }
+
+        .right input[type=text] {
+            margin: 0px 9px;
+            color: cyan;
+            font-size: 17px;
+            top: 2px;
+            margin: 6px 7px;
+            background-color: rgb(155 37 37 / 56%);
+            padding: 2px 2px;
+            cursor: pointer;
+            font-family: 'Lobster', cursive;
+
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+
+            font-size: 19px;
+        }
+
+        .navbar li a {
+
+            color: palegoldenrod;
+            text-decoration: none;
+            padding: 30px 34px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: rgb(107, 5, 5);
+            text-decoration: underline;
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 46px 94px;
+            padding: 63px;
+            border-radius: 44px;
+            width: 577px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 383px;
+            margin: 13px auto;
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            border: 2px solid grey;
+            font-size: 17px;
+            margin: opx 9px;
+            padding: 5px 24px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            background-color: rgb(61, 88, 19);
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 386px;
+            padding: 0px;
+            border: 2px solid black;
+            margin: 4px auto;
+            font-size: 21px;
+            outline: none;
+            border-radius: 10px;
+            font-family: 'Lobster', cursive;
+        }
+
+        .bton {
+            position: absolute;
+            bottom: -11px;
+            right: 2px;
+            margin: 0px 0px;
+            padding: 6px;
+            border-radius: 10px;
+            font-size: 65px;
+
+        }
+
+        .bh {
+            background-color: black;
+            color: darkgoldenrod;
+        }
+
+        .bh:hover{
+            background-color: cadetblue;
+            
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+    <header class="header">
+        <!-- .......   for logo -->
+        <div class="left">
+            <img src="img/i.jpg">
+            <div class="text">Tanya Fitnesss</div>
+
+            </ul>
+        </div>
+        <!-- .......   for nav      -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fit Calculator</a></li>
+                <li><a href="#">Contact</a></li>
+
+        </div>
+        <!-- ........   for search     -->
+        <div class="right">
+            <input type="text" placeholder="search" class="srch">
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join Delhi's Best GYM NOW</h1>
+        <form action="no.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Locality ">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Name Number">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+    <div class="bton">
+        <button class="bh">Call Us</button>
+        <button class="bh"> Email</button>
+    </div>
+</body>
+
+</html>

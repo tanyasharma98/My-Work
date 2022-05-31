@@ -1,0 +1,2 @@
+print("Enter Two digits to add")
+print(int(input()) + int(input()))

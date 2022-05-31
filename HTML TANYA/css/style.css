@@ -1,0 +1,29 @@
+h1 {
+	background-image: url('../img/img.jpg');
+	background-size: : 60% 60%;
+	background-position: right bottom;
+	border: 2px dashed blue ;
+	width: 400px;
+	height: 400px;
+	margin: 50px;
+}
+
+#second-para {
+	color: white;
+
+	background-color: magenta;
+	text-align: center;
+	text-decoration: underline overline line-through;
+	text-transform: capitalize;
+	line-height: 40px;
+	letter-spacing: 5px;
+	margin: 50px;
+}
+.first-class {
+	color:green;
+}
+
+.just-para {
+background-color: lightblue;
+float:left;
+}

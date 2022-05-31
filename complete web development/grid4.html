@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autofit & Minmax</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 112px 112px 112px;*/
+            /* grid-template-columns: 1fr 1fr 1fr;  */
+            grid-template-columns: repeat( autofit, Minmax(1000px , 1fr));
+            
+        }
+        .box{
+            background-color: crimson;
+            border: 2px solid black;
+            display: grid;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <dv class="box">this is box1</dv>
+        <dv class="box">this is box2</dv>
+        <dv class="box">this is box3</dv>
+        <dv class="box">this is box4</dv>
+        <dv class="box">this is box5</dv>
+        <dv class="box">this is box6</dv>
+        <dv class="box">this is box7</dv>
+        <dv class="box">this is box8</dv>
+        <dv class="box">this is box9</dv>
+        <dv class="box">this is box10</dv>
+    </div>
+    
+</body>
+</html>

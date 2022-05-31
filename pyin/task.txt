@@ -1,0 +1,4 @@
+jo =int(input("Enter the range of numbers"))
+
+for i in range(0,jo+1):
+   print(i)

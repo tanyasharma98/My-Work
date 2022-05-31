@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interval $ TimeOut</title>
+
+    <style>
+        #time{
+            display: flex;
+    background-color: palevioletred;
+    color: rgb(19, 5, 85);
+    /* width: 500px; */
+    /* height: 500px; */
+    align-items: center;
+    justify-content: center;
+    padding: 74px 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 31px;
+    margin: 57px 223px;
+}
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="time"></p>
+    </div>
+
+    <script>
+        // function greet( name, byText){
+    //    console.log("GOOD MORNING" + name +byText );
+        // }
+        // setInterval(greet, 1000,"Tanya","Good NIGHT")
+
+        // setInterval(greet,1000,"tanya","Good Night");
+        // clearInterval(intervalid); 
+
+
+
+        // CLOCK
+
+        function displayTime(){
+            time= new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML=time;
+        }
+        setInterval(displayTime,1000)
+    </script>
+</body>
+</html>
